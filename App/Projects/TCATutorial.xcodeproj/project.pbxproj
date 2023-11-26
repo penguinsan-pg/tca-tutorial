@@ -11,6 +11,7 @@
 		0E079DDD2B135B8700AE7D51 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E079DDC2B135B8700AE7D51 /* ContentView.swift */; };
 		0E079DDF2B135B8900AE7D51 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E079DDE2B135B8900AE7D51 /* Assets.xcassets */; };
 		0E079DE32B135B8900AE7D51 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E079DE22B135B8900AE7D51 /* Preview Assets.xcassets */; };
+		0EE2498C2B135E66006517B6 /* TCATutorialKit in Frameworks */ = {isa = PBXBuildFile; productRef = 0EE2498B2B135E66006517B6 /* TCATutorialKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0EE2498C2B135E66006517B6 /* TCATutorialKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +40,7 @@
 			children = (
 				0E079DD92B135B8700AE7D51 /* TCATutorial */,
 				0E079DD82B135B8700AE7D51 /* Products */,
+				0EE2498A2B135E66006517B6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -69,6 +72,13 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		0EE2498A2B135E66006517B6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -85,6 +95,9 @@
 			dependencies = (
 			);
 			name = TCATutorial;
+			packageProductDependencies = (
+				0EE2498B2B135E66006517B6 /* TCATutorialKit */,
+			);
 			productName = TCATutorial;
 			productReference = 0E079DD72B135B8700AE7D51 /* TCATutorial.app */;
 			productType = "com.apple.product-type.application";
@@ -361,6 +374,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0EE2498B2B135E66006517B6 /* TCATutorialKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = TCATutorialKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0E079DCF2B135B8700AE7D51 /* Project object */;
 }
