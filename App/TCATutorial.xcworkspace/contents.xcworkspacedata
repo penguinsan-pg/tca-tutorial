@@ -4,4 +4,7 @@
    <FileRef
       location = "group:TCATutorialKit">
    </FileRef>
+   <FileRef
+      location = "group:Projects/TCATutorial.xcodeproj">
+   </FileRef>
 </Workspace>
