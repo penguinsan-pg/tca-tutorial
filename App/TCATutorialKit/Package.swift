@@ -14,11 +14,18 @@ let package = Package(
             name: "TCATutorialKit",
             targets: ["TCATutorialKit"]),
     ],
+    dependencies: [
+        .package(url: "https://github.com/pointfreeco/swift-composable-architecture", exact: "1.4.2"),
+    ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
         // Targets can depend on other targets in this package and products from dependencies.
         .target(
-            name: "TCATutorialKit"),
+            name: "TCATutorialKit",
+            dependencies: [
+                .product(name: "ComposableArchitecture", package: "swift-composable-architecture"),
+            ]
+        ),
         .testTarget(
             name: "TCATutorialKitTests",
             dependencies: ["TCATutorialKit"]),
