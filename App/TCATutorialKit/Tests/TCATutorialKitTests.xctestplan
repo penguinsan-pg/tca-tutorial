@@ -1,0 +1,24 @@
+{
+  "configurations" : [
+    {
+      "id" : "42F7345F-79F1-492B-92E4-14A4CD598C3C",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:..\/TCATutorialKit",
+        "identifier" : "TCATutorialKitTests",
+        "name" : "TCATutorialKitTests"
+      }
+    }
+  ],
+  "version" : 1
+}
