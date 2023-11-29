@@ -12,4 +12,11 @@ import Foundation
 @Reducer
 struct CounterFeature {
 
+    struct State {
+
+    }
+
+    enum Action {
+
+    }
 }
