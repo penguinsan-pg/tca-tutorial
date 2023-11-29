@@ -8,3 +8,8 @@
 
 import ComposableArchitecture
 import Foundation
+
+@Reducer
+struct CounterFeature {
+
+}
