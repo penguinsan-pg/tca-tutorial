@@ -7,7 +7,7 @@
 //
 
 import ComposableArchitecture
-import Foundation
+import SwiftUI
 
 @Reducer
 struct CounterFeature {
@@ -34,4 +34,15 @@ struct CounterFeature {
             }
         }
     }
+}
+
+struct CounterView: View {
+
+    var body: some View {
+        EmptyView()
+    }
+}
+
+#Preview {
+    CounterView()
 }
