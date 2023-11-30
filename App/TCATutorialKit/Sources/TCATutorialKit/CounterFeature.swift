@@ -20,4 +20,14 @@ struct CounterFeature {
         case decrementButtonTapped
         case incrementButtonTapped
     }
+
+    var body: some ReducerOf<Self> {
+        Reduce { state, action in
+            switch action {
+            case .decrementButtonTapped:
+
+            case .incrementButtonTapped:
+            }
+        }
+    }
 }
