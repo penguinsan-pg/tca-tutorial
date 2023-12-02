@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		0E079DDB2B135B8700AE7D51 /* TCATutorialApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E079DDA2B135B8700AE7D51 /* TCATutorialApp.swift */; };
-		0E079DDD2B135B8700AE7D51 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E079DDC2B135B8700AE7D51 /* ContentView.swift */; };
 		0E079DDF2B135B8900AE7D51 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E079DDE2B135B8900AE7D51 /* Assets.xcassets */; };
 		0E079DE32B135B8900AE7D51 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E079DE22B135B8900AE7D51 /* Preview Assets.xcassets */; };
 		0EE2498C2B135E66006517B6 /* TCATutorialKit in Frameworks */ = {isa = PBXBuildFile; productRef = 0EE2498B2B135E66006517B6 /* TCATutorialKit */; };
@@ -17,7 +16,6 @@
 /* Begin PBXFileReference section */
 		0E079DD72B135B8700AE7D51 /* TCATutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TCATutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E079DDA2B135B8700AE7D51 /* TCATutorialApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCATutorialApp.swift; sourceTree = "<group>"; };
-		0E079DDC2B135B8700AE7D51 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0E079DDE2B135B8900AE7D51 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0E079DE02B135B8900AE7D51 /* TCATutorial.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TCATutorial.entitlements; sourceTree = "<group>"; };
 		0E079DE22B135B8900AE7D51 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -56,7 +54,6 @@
 			isa = PBXGroup;
 			children = (
 				0E079DDA2B135B8700AE7D51 /* TCATutorialApp.swift */,
-				0E079DDC2B135B8700AE7D51 /* ContentView.swift */,
 				0E079DDE2B135B8900AE7D51 /* Assets.xcassets */,
 				0E079DE02B135B8900AE7D51 /* TCATutorial.entitlements */,
 				0E079DE12B135B8900AE7D51 /* Preview Content */,
@@ -152,7 +149,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0E079DDD2B135B8700AE7D51 /* ContentView.swift in Sources */,
 				0E079DDB2B135B8700AE7D51 /* TCATutorialApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
