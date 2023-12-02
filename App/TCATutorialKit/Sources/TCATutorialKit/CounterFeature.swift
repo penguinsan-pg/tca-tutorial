@@ -21,6 +21,7 @@ struct CounterFeature {
     enum Action {
         case decrementButtonTapped
         case factButtonTapped
+        case factResponse(String)
         case incrementButtonTapped
     }
 
@@ -39,7 +40,13 @@ struct CounterFeature {
                     let (data, _) = try await URLSession.shared
                         .data(from: URL(string: "http://numbersapi.com/\(count)")!)
                     let fact = String(decoding: data, as: UTF8.self)
+                    await send(.factResponse(fact))
                 }
+
+            case .factResponse(let fact):
+                state.fact = fact
+                state.isLoading = false
+                return .none
 
             case .incrementButtonTapped:
                 state.count += 1
