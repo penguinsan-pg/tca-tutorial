@@ -6,6 +6,7 @@
 //  
 //
 
+import ComposableArchitecture
 import SwiftUI
 
 public struct AppRootView: View {
@@ -13,6 +14,10 @@ public struct AppRootView: View {
     public init() {}
 
     public var body: some View {
-        Text("Hello, World!")
+        CounterView(
+            store: Store(initialState: CounterFeature.State()) {
+                CounterFeature()
+            }
+        )
     }
 }
