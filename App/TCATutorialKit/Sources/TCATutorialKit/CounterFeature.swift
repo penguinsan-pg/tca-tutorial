@@ -74,6 +74,15 @@ struct CounterView: View {
                 .padding()
                 .background(Color.black.opacity(0.1))
                 .cornerRadius(10)
+
+                if viewStore.isLoading {
+                    ProgressView()
+                } else if let fact = viewStore.fact {
+                    Text(fact)
+                        .font(.largeTitle)
+                        .multilineTextAlignment(.center)
+                        .padding()
+                }
             }
         }
     }
