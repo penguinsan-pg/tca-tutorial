@@ -13,6 +13,7 @@ public struct AppRootView: View {
 
     static let store = Store(initialState: CounterFeature.State()) {
         CounterFeature()
+            ._printChanges()
     }
 
     public init() {}
