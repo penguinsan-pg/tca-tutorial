@@ -7,12 +7,13 @@
 //
 
 import SwiftUI
+import TCATutorialKit
 
 @main
 struct TCATutorialApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            AppRootView()
         }
     }
 }
