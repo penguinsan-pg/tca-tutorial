@@ -11,13 +11,13 @@ import SwiftUI
 
 public struct AppRootView: View {
 
+    static let store = Store(initialState: CounterFeature.State()) {
+        CounterFeature()
+    }
+
     public init() {}
 
     public var body: some View {
-        CounterView(
-            store: Store(initialState: CounterFeature.State()) {
-                CounterFeature()
-            }
-        )
+        CounterView(store: AppRootView.store)
     }
 }
