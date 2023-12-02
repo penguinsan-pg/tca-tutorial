@@ -72,5 +72,9 @@ struct CounterView: View {
 }
 
 #Preview {
-    CounterView()
+    CounterView(
+        store: Store(initialState: CounterFeature.State()) {
+            CounterFeature()
+        }
+    )
 }
