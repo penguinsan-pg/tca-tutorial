@@ -18,7 +18,11 @@ final class CounterFeatureTests: XCTestCase {
             CounterFeature()
         }
 
-        await store.send(.incrementButtonTapped)
-        await store.send(.decrementButtonTapped)
+        await store.send(.incrementButtonTapped) {
+            $0.count = 1
+        }
+        await store.send(.decrementButtonTapped) {
+            $0.count = 0
+        }
     }
 }
