@@ -34,5 +34,8 @@ final class CounterFeatureTests: XCTestCase {
         await store.send(.toggleTimerButtonTapped) {
             $0.isTimerRunning = true
         }
+        await store.send(.toggleTimerButtonTapped) {
+            $0.isTimerRunning = false
+        }
     }
 }
