@@ -25,4 +25,10 @@ final class CounterFeatureTests: XCTestCase {
             $0.count = 0
         }
     }
+
+    func testTimer() async {
+        let store = TestStore(initialState: CounterFeature.State()) {
+            CounterFeature()
+        }
+    }
 }
