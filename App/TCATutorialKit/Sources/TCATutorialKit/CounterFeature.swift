@@ -16,6 +16,7 @@ struct CounterFeature {
         var count = 0
         var fact: String?
         var isLoading = false
+        var isTimerRunning = false
     }
 
     enum Action {
@@ -23,6 +24,7 @@ struct CounterFeature {
         case factButtonTapped
         case factResponse(String)
         case incrementButtonTapped
+        case toggleTimerButtonTapped
     }
 
     var body: some ReducerOf<Self> {
@@ -52,6 +54,11 @@ struct CounterFeature {
                 state.count += 1
                 state.fact = nil
                 return .none
+
+            case .toggleTimerButtonTapped:
+                state.isTimerRunning.toggle()
+                return .run { send in
+                }
             }
         }
     }
