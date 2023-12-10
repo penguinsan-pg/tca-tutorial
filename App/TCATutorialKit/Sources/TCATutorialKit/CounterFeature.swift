@@ -58,6 +58,9 @@ struct CounterFeature {
             case .toggleTimerButtonTapped:
                 state.isTimerRunning.toggle()
                 return .run { send in
+                    while true {
+                        try await Task.sleep(for: .seconds(1))
+                    }
                 }
             }
         }
