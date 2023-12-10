@@ -17,5 +17,8 @@ final class CounterFeatureTests: XCTestCase {
         let store = TestStore(initialState: CounterFeature.State()) {
             CounterFeature()
         }
+
+        await store.send(.incrementButtonTapped)
+        await store.send(.decrementButtonTapped)
     }
 }
