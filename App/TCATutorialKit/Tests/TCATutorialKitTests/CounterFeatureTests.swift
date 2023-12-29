@@ -46,4 +46,10 @@ final class CounterFeatureTests: XCTestCase {
             $0.isTimerRunning = false
         }
     }
+
+    func testNumberFact() async {
+        let store = TestStore(initialState: CounterFeature.State()) {
+            CounterFeature()
+        }
+    }
 }
