@@ -13,5 +13,8 @@ import XCTest
 final class AppFeatureTests: XCTestCase {
 
     func testIncrementInFirstTab() {
+        let store = TestStore(initialState: AppFeature.State()) {
+            AppFeature()
+        }
     }
 }
