@@ -21,6 +21,13 @@ struct AppFeature {
         case tab1(CounterFeature.Action)
         case tab2(CounterFeature.Action)
     }
+
+    var body: some ReducerOf<Self> {
+        Reduce { state, action in
+            // Core logic of the app feature
+            return .none
+        }
+    }
 }
 
 struct AppView: View {
