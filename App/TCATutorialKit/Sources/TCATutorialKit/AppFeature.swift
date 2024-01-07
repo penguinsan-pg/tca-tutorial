@@ -56,3 +56,11 @@ struct AppView: View {
         }
     }
 }
+
+#Preview {
+    AppView(
+        store: Store(initialState: AppFeature.State()) {
+            AppFeature()
+        }
+    )
+}
