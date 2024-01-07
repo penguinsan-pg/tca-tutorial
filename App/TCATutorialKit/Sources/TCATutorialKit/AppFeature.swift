@@ -9,6 +9,11 @@
 import ComposableArchitecture
 import SwiftUI
 
+@Reducer
+struct AppFeature {
+
+}
+
 struct AppView: View {
 
     let store1: StoreOf<CounterFeature>
