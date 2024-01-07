@@ -40,8 +40,7 @@ struct AppFeature {
 
 struct AppView: View {
 
-    let store1: StoreOf<CounterFeature>
-    let store2: StoreOf<CounterFeature>
+    let store: StoreOf<AppFeature>
 
     var body: some View {
         TabView {
