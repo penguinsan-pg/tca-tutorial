@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		0E0F721D2B4C0343002BF424 /* TCAContactsKit in Frameworks */ = {isa = PBXBuildFile; productRef = 0E0F721C2B4C0343002BF424 /* TCAContactsKit */; };
 		0E1CAB3C2B4BFF95005FC6F9 /* TCAContactsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1CAB3B2B4BFF95005FC6F9 /* TCAContactsApp.swift */; };
-		0E1CAB3E2B4BFF95005FC6F9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1CAB3D2B4BFF95005FC6F9 /* ContentView.swift */; };
 		0E1CAB402B4BFF97005FC6F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E1CAB3F2B4BFF97005FC6F9 /* Assets.xcassets */; };
 		0E1CAB432B4BFF97005FC6F9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E1CAB422B4BFF97005FC6F9 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -17,7 +16,6 @@
 /* Begin PBXFileReference section */
 		0E1CAB382B4BFF95005FC6F9 /* TCAContacts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TCAContacts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E1CAB3B2B4BFF95005FC6F9 /* TCAContactsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCAContactsApp.swift; sourceTree = "<group>"; };
-		0E1CAB3D2B4BFF95005FC6F9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0E1CAB3F2B4BFF97005FC6F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0E1CAB422B4BFF97005FC6F9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -62,7 +60,6 @@
 			isa = PBXGroup;
 			children = (
 				0E1CAB3B2B4BFF95005FC6F9 /* TCAContactsApp.swift */,
-				0E1CAB3D2B4BFF95005FC6F9 /* ContentView.swift */,
 				0E1CAB3F2B4BFF97005FC6F9 /* Assets.xcassets */,
 				0E1CAB412B4BFF97005FC6F9 /* Preview Content */,
 			);
@@ -150,7 +147,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0E1CAB3E2B4BFF95005FC6F9 /* ContentView.swift in Sources */,
 				0E1CAB3C2B4BFF95005FC6F9 /* TCAContactsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
