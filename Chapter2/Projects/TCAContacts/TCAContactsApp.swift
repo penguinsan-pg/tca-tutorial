@@ -7,12 +7,13 @@
 //
 
 import SwiftUI
+import TCAContactsKit
 
 @main
 struct TCAContactsApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            AppRootView()
         }
     }
 }
