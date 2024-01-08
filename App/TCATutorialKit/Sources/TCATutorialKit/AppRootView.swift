@@ -11,14 +11,14 @@ import SwiftUI
 
 public struct AppRootView: View {
 
-    static let store = Store(initialState: CounterFeature.State()) {
-        CounterFeature()
+    static let store = Store(initialState: AppFeature.State()) {
+        AppFeature()
             ._printChanges()
     }
 
     public init() {}
 
     public var body: some View {
-        CounterView(store: AppRootView.store)
+        AppView(store: AppRootView.store)
     }
 }
