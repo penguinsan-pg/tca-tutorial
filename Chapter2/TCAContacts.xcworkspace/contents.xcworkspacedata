@@ -4,4 +4,7 @@
    <FileRef
       location = "group:TCAContactsKit">
    </FileRef>
+   <FileRef
+      location = "group:Projects/TCAContacts.xcodeproj">
+   </FileRef>
 </Workspace>
