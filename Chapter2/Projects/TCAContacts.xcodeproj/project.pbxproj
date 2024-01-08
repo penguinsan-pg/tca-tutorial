@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E0F721D2B4C0343002BF424 /* TCAContactsKit in Frameworks */ = {isa = PBXBuildFile; productRef = 0E0F721C2B4C0343002BF424 /* TCAContactsKit */; };
 		0E1CAB3C2B4BFF95005FC6F9 /* TCAContactsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1CAB3B2B4BFF95005FC6F9 /* TCAContactsApp.swift */; };
 		0E1CAB3E2B4BFF95005FC6F9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1CAB3D2B4BFF95005FC6F9 /* ContentView.swift */; };
 		0E1CAB402B4BFF97005FC6F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E1CAB3F2B4BFF97005FC6F9 /* Assets.xcassets */; };
@@ -26,17 +27,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E0F721D2B4C0343002BF424 /* TCAContactsKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E0F721B2B4C0343002BF424 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		0E1CAB2F2B4BFF95005FC6F9 = {
 			isa = PBXGroup;
 			children = (
 				0E1CAB3A2B4BFF95005FC6F9 /* TCAContacts */,
 				0E1CAB392B4BFF95005FC6F9 /* Products */,
+				0E0F721B2B4C0343002BF424 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,6 +93,9 @@
 			dependencies = (
 			);
 			name = TCAContacts;
+			packageProductDependencies = (
+				0E0F721C2B4C0343002BF424 /* TCAContactsKit */,
+			);
 			productName = TCAContacts;
 			productReference = 0E1CAB382B4BFF95005FC6F9 /* TCAContacts.app */;
 			productType = "com.apple.product-type.application";
@@ -352,6 +365,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0E0F721C2B4C0343002BF424 /* TCAContactsKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = TCAContactsKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0E1CAB302B4BFF95005FC6F9 /* Project object */;
 }
