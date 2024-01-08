@@ -1,0 +1,24 @@
+{
+  "configurations" : [
+    {
+      "id" : "693D90D6-75BD-44DF-B1F9-52FBF9B09825",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:..\/TCAContactsKit",
+        "identifier" : "TCAContactsKitTests",
+        "name" : "TCAContactsKitTests"
+      }
+    }
+  ],
+  "version" : 1
+}
