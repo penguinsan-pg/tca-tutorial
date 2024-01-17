@@ -7,7 +7,7 @@
 //
 
 import ComposableArchitecture
-import Foundation
+import SwiftUI
 
 struct Contact: Equatable, Identifiable {
     let id: UUID
@@ -31,6 +31,33 @@ struct ContactsFeature {
             case .addButtonTapped:
                 // TODO: Handle action
                 return .none
+            }
+        }
+    }
+}
+
+struct ContactsView: View {
+
+    let store: StoreOf<ContactsFeature>
+
+    var body: some View {
+        NavigationStack {
+            WithViewStore(self.store, observe: \.contacts) { viewStore in
+                List {
+                    ForEach(viewStore.state) { contact in
+                        Text(contact.name)
+                    }
+                }
+                .navigationTitle("Contacts")
+                .toolbar {
+                    ToolbarItem {
+                        Button {
+                            viewStore.send(.addButtonTapped)
+                        } label: {
+                            Image(systemName: "plus")
+                        }
+                    }
+                }
             }
         }
     }
