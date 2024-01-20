@@ -27,6 +27,8 @@ struct AddContactFeature {
         case setName(String)
     }
 
+    @Dependency(\.dismiss) var dismiss
+
     var body: some ReducerOf<Self> {
         Reduce { state, action in
             switch action {
