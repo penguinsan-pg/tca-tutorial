@@ -18,7 +18,6 @@ struct AddContactFeature {
 
     enum Action {
         enum Delegate: Equatable {
-            case cancel
             case saveContact(Contact)
         }
         case cancelButtonTapped
