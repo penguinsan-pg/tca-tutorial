@@ -33,6 +33,9 @@ struct AddContactFeature {
             case .cancelButtonTapped:
                 return .none
 
+            case .delegate:
+                return .none
+
             case .saveButtonTapped:
                 return .none
 
