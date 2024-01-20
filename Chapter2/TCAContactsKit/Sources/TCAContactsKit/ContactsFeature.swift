@@ -38,6 +38,9 @@ struct ContactsFeature {
                 return .none
             }
         }
+        .ifLet(\.$addContact, action: \.addContact) {
+            AddContactFeature()
+        }
     }
 }
 
