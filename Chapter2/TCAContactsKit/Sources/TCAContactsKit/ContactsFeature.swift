@@ -36,6 +36,10 @@ struct ContactsFeature {
                 )
                 return .none
 
+            case .addContact(.presented(.cancelButtonTapped)):
+                state.addContact = nil
+                return .none
+
             case .addContact:
                 return .none
             }
