@@ -24,6 +24,7 @@ struct ContactsFeature {
 
     enum Action {
         case addButtonTapped
+        case addContact(PresentationAction<AddContactFeature.Action>)
     }
 
     var body: some ReducerOf<Self> {
