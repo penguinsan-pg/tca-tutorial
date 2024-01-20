@@ -36,13 +36,8 @@ struct ContactsFeature {
                 )
                 return .none
 
-            case .addContact(.presented(.delegate(.cancel))):
-                state.addContact = nil
-                return .none
-
             case .addContact(.presented(.delegate(.saveContact(let contact)))):
                 state.contacts.append(contact)
-                state.addContact = nil
                 return .none
 
             case .addContact:
