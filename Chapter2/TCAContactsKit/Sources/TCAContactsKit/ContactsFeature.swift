@@ -33,6 +33,9 @@ struct ContactsFeature {
             case .addButtonTapped:
                 // TODO: Handle action
                 return .none
+
+            case .addContact:
+                return .none
             }
         }
     }
