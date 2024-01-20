@@ -18,6 +18,7 @@ struct Contact: Equatable, Identifiable {
 struct ContactsFeature {
 
     struct State: Equatable {
+        @PresentationState var addContact: AddContactFeature.State?
         var contacts: IdentifiedArrayOf<Contact> = []
     }
 
