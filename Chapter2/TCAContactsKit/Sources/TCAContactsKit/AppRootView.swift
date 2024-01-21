@@ -6,13 +6,19 @@
 //  
 //
 
+import ComposableArchitecture
 import SwiftUI
 
 public struct AppRootView: View {
 
+    private static let store = Store(initialState: ContactsFeature.State()) {
+        ContactsFeature()
+            ._printChanges()
+    }
+
     public init() {}
 
     public var body: some View {
-        Text("TCAContacts")
+        ContactsView(store: AppRootView.store)
     }
 }
