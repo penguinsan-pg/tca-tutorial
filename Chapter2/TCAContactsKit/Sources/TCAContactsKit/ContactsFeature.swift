@@ -27,9 +27,8 @@ struct ContactsFeature {
             case confirmDeletion(id: Contact.ID)
         }
         case addButtonTapped
-        case addContact(PresentationAction<AddContactFeature.Action>)
-        case alert(PresentationAction<Alert>)
         case deleteButtonTapped(id: Contact.ID)
+        case destination(PresentationAction<Destination.Action>)
     }
 
     var body: some ReducerOf<Self> {
