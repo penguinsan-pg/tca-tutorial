@@ -18,9 +18,8 @@ struct Contact: Equatable, Identifiable {
 struct ContactsFeature {
 
     struct State: Equatable {
-        @PresentationState var addContact: AddContactFeature.State?
-        @PresentationState var alert: AlertState<Action.Alert>?
         var contacts: IdentifiedArrayOf<Contact> = []
+        @PresentationState var destination: Destination.State?
     }
 
     enum Action {
