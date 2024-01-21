@@ -63,6 +63,7 @@ struct ContactsFeature {
         .ifLet(\.$addContact, action: \.addContact) {
             AddContactFeature()
         }
+        .ifLet(\.$alert, action: \.alert)
     }
 }
 
