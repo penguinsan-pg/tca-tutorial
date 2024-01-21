@@ -90,6 +90,9 @@ extension ContactsFeature {
         }
 
         var body: some ReducerOf<Self> {
+            Scope(state: \.addContact, action: \.addContact) {
+                AddContactFeature()
+            }
         }
     }
 }
