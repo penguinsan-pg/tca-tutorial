@@ -46,11 +46,8 @@ struct ContactsFeature {
                 state.contacts.append(contact)
                 return .none
 
-            case .alert(.presented(.confirmDeletion(let id))):
+            case .destination(.presented(.alert(.confirmDeletion(let id)))):
                 state.contacts.remove(id: id)
-                return .none
-
-            case .alert:
                 return .none
 
             case .deleteButtonTapped(let id):
