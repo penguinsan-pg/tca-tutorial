@@ -108,6 +108,12 @@ struct ContactsView: View {
                 AddContactView(store: addContactStore)
             }
         }
+        .alert(
+            store: self.store.scope(
+                state: \.$alert,
+                action: \.alert
+            )
+        )
     }
 }
 
