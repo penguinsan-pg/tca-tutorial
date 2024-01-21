@@ -50,6 +50,13 @@ struct ContactsFeature {
                 return .none
 
             case .deleteButtonTapped(let id):
+                state.alert = AlertState {
+                    TextState("Are you sure?")
+                } actions: {
+                    ButtonState(role: .destructive, action: .confirmDeletion(id: id)) {
+                        TextState("Delete")
+                    }
+                }
                 return .none
             }
         }
