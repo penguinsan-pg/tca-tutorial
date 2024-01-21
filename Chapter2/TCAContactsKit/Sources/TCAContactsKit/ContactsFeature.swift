@@ -85,6 +85,8 @@ extension ContactsFeature {
         }
 
         enum Action {
+            case addContact(AddContactFeature.Action)
+            case alert(ContactsFeature.Action.Alert)
         }
     }
 }
