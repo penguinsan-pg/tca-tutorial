@@ -74,6 +74,13 @@ struct ContactsFeature {
     }
 }
 
+extension ContactsFeature {
+
+    @Reducer
+    struct Destination {
+    }
+}
+
 struct ContactsView: View {
 
     let store: StoreOf<ContactsFeature>
