@@ -49,6 +49,13 @@ struct ContactsFeature {
             case .addContact:
                 return .none
 
+            case .alert(.presented(.confirmDeletion(let id))):
+                state.contacts.remove(id: id)
+                return .none
+
+            case .alert:
+                return .none
+
             case .deleteButtonTapped(let id):
                 state.alert = AlertState {
                     TextState("Are you sure?")
