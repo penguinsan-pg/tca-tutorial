@@ -42,11 +42,8 @@ struct ContactsFeature {
                 )
                 return .none
 
-            case .addContact(.presented(.delegate(.saveContact(let contact)))):
+            case .destination(.presented(.addContact(.delegate(.saveContact(let contact))))):
                 state.contacts.append(contact)
-                return .none
-
-            case .addContact:
                 return .none
 
             case .alert(.presented(.confirmDeletion(let id))):
