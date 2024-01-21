@@ -25,9 +25,11 @@ struct ContactsFeature {
 
     enum Action {
         enum Alert: Equatable {
+            case confirmDeletion(id: Contact.ID)
         }
         case addButtonTapped
         case addContact(PresentationAction<AddContactFeature.Action>)
+        case alert(PresentationAction<Alert>)
         case deleteButtonTapped(id: Contact.ID)
     }
 
