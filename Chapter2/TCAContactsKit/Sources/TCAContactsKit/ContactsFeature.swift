@@ -39,7 +39,7 @@ struct ContactsFeature {
             case .addButtonTapped:
                 state.destination = .addContact(
                     AddContactFeature.State(
-                        contact: Contact(id: UUID(), name: "")
+                        contact: Contact(id: self.uuid(), name: "")
                     )
                 )
                 return .none
