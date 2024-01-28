@@ -28,6 +28,7 @@ final class ContactsFeatureTests: XCTestCase {
             )
         }
         await store.send(.destination(.presented(.addContact(.setName("Blob Jr."))))) {
+            $0.$destination[case: \.addContact]?.contact.name = "Blob Jr."
         }
     }
 }
