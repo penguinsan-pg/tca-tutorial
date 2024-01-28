@@ -56,5 +56,11 @@ final class ContactsFeatureTests: XCTestCase {
         await store.send(.destination(.presented(.addContact(.setName("Blob Jr.")))))
         await store.send(.destination(.presented(.addContact(.saveButtonTapped))))
         await store.skipReceivedActions()
+        store.assert {
+            $0.contacts = [
+                Contact(id: UUID(0), name: "Blob Jr.")
+            ]
+            $0.destination = nil
+        }
     }
 }
