@@ -43,4 +43,12 @@ final class ContactsFeatureTests: XCTestCase {
             $0.destination = nil
         }
     }
+
+    func testAddFlow_NonExhaustive() async {
+        let store = TestStore(initialState: ContactsFeature.State()) {
+            ContactsFeature()
+        } withDependencies: {
+            $0.uuid = .incrementing
+        }
+    }
 }
