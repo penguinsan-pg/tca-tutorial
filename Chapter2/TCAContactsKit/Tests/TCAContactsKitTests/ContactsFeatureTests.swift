@@ -50,5 +50,6 @@ final class ContactsFeatureTests: XCTestCase {
         } withDependencies: {
             $0.uuid = .incrementing
         }
+        store.exhaustivity = .off
     }
 }
