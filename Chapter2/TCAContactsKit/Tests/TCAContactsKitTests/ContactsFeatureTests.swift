@@ -35,6 +35,9 @@ final class ContactsFeatureTests: XCTestCase {
             \.destination.addContact.delegate.saveContact,
             Contact(id: UUID(0), name: "Blob Jr.")
         ) {
+            $0.contacts = [
+                Contact(id: UUID(0), name: "Blob Jr.")
+            ]
         }
     }
 }
