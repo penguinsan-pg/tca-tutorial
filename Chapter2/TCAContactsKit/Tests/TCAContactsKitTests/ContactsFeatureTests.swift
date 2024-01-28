@@ -54,5 +54,6 @@ final class ContactsFeatureTests: XCTestCase {
 
         await store.send(.addButtonTapped)
         await store.send(.destination(.presented(.addContact(.setName("Blob Jr.")))))
+        await store.send(.destination(.presented(.addContact(.saveButtonTapped))))
     }
 }
