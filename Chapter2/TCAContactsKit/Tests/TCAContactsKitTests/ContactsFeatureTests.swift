@@ -51,5 +51,7 @@ final class ContactsFeatureTests: XCTestCase {
             $0.uuid = .incrementing
         }
         store.exhaustivity = .off
+
+        await store.send(.addButtonTapped)
     }
 }
