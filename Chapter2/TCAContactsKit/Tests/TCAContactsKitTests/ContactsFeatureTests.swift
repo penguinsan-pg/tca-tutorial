@@ -63,4 +63,7 @@ final class ContactsFeatureTests: XCTestCase {
             $0.destination = nil
         }
     }
+
+    func testDeleteContact() async {
+    }
 }
