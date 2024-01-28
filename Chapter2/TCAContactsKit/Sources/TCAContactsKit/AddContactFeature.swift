@@ -17,6 +17,7 @@ struct AddContactFeature {
     }
 
     enum Action {
+        @CasePathable
         enum Delegate: Equatable {
             case saveContact(Contact)
         }

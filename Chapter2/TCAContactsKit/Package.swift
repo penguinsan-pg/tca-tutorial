@@ -15,7 +15,7 @@ let package = Package(
             targets: ["TCAContactsKit"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/pointfreeco/swift-composable-architecture", exact: "1.5.6"),
+        .package(url: "https://github.com/pointfreeco/swift-composable-architecture", exact: "1.6.0"),
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
