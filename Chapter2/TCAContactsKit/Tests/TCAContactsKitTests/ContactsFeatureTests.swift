@@ -75,5 +75,8 @@ final class ContactsFeatureTests: XCTestCase {
         ) {
             ContactsFeature()
         }
+
+        await store.send(.deleteButtonTapped(id: UUID(1))) {
+        }
     }
 }
