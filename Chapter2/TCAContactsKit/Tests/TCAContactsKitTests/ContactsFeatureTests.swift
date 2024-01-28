@@ -14,5 +14,8 @@ import XCTest
 final class ContactsFeatureTests: XCTestCase {
 
     func testAddFlow() async {
+        let store = TestStore(initialState: ContactsFeature.State()) {
+            ContactsFeature()
+        }
     }
 }
