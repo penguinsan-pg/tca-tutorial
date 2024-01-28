@@ -16,6 +16,8 @@ final class ContactsFeatureTests: XCTestCase {
     func testAddFlow() async {
         let store = TestStore(initialState: ContactsFeature.State()) {
             ContactsFeature()
+        } withDependencies: {
+            $0.uuid = .incrementing
         }
 
         await store.send(.addButtonTapped) {
