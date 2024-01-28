@@ -31,6 +31,8 @@ struct ContactsFeature {
         case destination(PresentationAction<Destination.Action>)
     }
 
+    @Dependency(\.uuid) var uuid
+
     var body: some ReducerOf<Self> {
         Reduce { state, action in
             switch action {
