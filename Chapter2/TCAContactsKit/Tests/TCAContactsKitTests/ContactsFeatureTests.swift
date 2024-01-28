@@ -21,6 +21,7 @@ final class ContactsFeatureTests: XCTestCase {
         await store.send(.addButtonTapped) {
             $0.destination = .addContact(
                 AddContactFeature.State(
+                    contact: Contact(id: ???, name: "")
                 )
             )
         }
