@@ -62,6 +62,13 @@ struct ContactsFeature {
                 state.destination = .alert(.deleteConfirmation(id: id))
                 return .none
 
+            case .path(.element(let id, action: .delegate(.confirmDeletion))):
+                guard let detailState = state.path[id: id] else {
+                    return .none
+                }
+                state.contacts.remove(id: detailState.contact.id)
+                return .none
+
             case .path:
                 return .none
             }
