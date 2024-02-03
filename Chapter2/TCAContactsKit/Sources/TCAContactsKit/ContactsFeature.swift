@@ -17,9 +17,10 @@ struct Contact: Equatable, Identifiable {
 @Reducer
 struct ContactsFeature {
 
+    @ObservableState
     struct State: Equatable {
         var contacts: IdentifiedArrayOf<Contact> = []
-        @PresentationState var destination: Destination.State?
+        @Presents var destination: Destination.State?
         var path = StackState<ContactDetailFeature.State>()
     }
 
@@ -112,7 +113,7 @@ extension AlertState where Action == ContactsFeature.Action.Alert {
 
 struct ContactsView: View {
 
-    let store: StoreOf<ContactsFeature>
+    @Bindable var store: StoreOf<ContactsFeature>
 
     var body: some View {
         NavigationStack(path: $store.scope(state: \.path, action: \.path)) {
