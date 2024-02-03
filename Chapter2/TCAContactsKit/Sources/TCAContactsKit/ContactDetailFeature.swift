@@ -7,7 +7,7 @@
 //
 
 import ComposableArchitecture
-import Foundation
+import SwiftUI
 
 @Reducer
 struct ContactDetailFeature {
@@ -25,5 +25,11 @@ struct ContactDetailFeature {
             switch action {
             }
         }
+    }
+}
+
+struct ContactDetailView: View {
+
+    var body: some View {
     }
 }
