@@ -19,6 +19,15 @@ struct ContactDetailFeature {
     }
 
     enum Action {
+        enum Alert {
+            case confirmDeletion
+        }
+        enum Delegate {
+            case confirmDeletion
+        }
+        case alert(PresentationAction<Alert>)
+        case delegate(Delegate)
+        case deleteButtonTapped
     }
 
     var body: some ReducerOf<Self> {
