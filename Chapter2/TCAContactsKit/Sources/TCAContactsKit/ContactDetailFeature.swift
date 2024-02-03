@@ -14,6 +14,7 @@ struct ContactDetailFeature {
 
     @ObservableState
     struct State: Equatable {
+        @Presents var alert: AlertState<Action.Alert>?
         let contact: Contact
     }
 
