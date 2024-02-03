@@ -69,12 +69,16 @@ extension AlertState where Action == ContactDetailFeature.Action.Alert {
 
 struct ContactDetailView: View {
 
-    let store: StoreOf<ContactDetailFeature>
+    @Bindable var store: StoreOf<ContactDetailFeature>
 
     var body: some View {
         Form {
+            Button("Delete") {
+                store.send(.deleteButtonTapped)
+            }
         }
         .navigationBarTitle(Text(store.contact.name))
+        .alert($store.scope(state: \.alert, action: \.alert))
     }
 }
 
