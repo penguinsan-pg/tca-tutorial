@@ -30,6 +30,7 @@ struct ContactsFeature {
         case addButtonTapped
         case deleteButtonTapped(id: Contact.ID)
         case destination(PresentationAction<Destination.Action>)
+        case path(StackAction<ContactDetailFeature.State, ContactDetailFeature.Action>)
     }
 
     @Dependency(\.uuid) var uuid
@@ -58,6 +59,9 @@ struct ContactsFeature {
 
             case .deleteButtonTapped(let id):
                 state.destination = .alert(.deleteConfirmation(id: id))
+                return .none
+
+            case .path:
                 return .none
             }
         }
