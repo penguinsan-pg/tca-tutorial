@@ -38,3 +38,17 @@ struct ContactDetailView: View {
         .navigationBarTitle(Text(store.contact.name))
     }
 }
+
+#Preview {
+    NavigationStack {
+        ContactDetailView(
+            store: Store(
+                initialState: ContactDetailFeature.State(
+                    contact: Contact(id: UUID(), name: "Blob")
+                )
+            ) {
+                ContactDetailFeature()
+            }
+        )
+    }
+}
