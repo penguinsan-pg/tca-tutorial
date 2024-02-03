@@ -120,16 +120,19 @@ struct ContactsView: View {
             WithViewStore(self.store, observe: \.contacts) { viewStore in
                 List {
                     ForEach(viewStore.state) { contact in
-                        HStack {
-                            Text(contact.name)
-                            Spacer()
-                            Button {
-                                viewStore.send(.deleteButtonTapped(id: contact.id))
-                            } label: {
-                                Image(systemName: "trash")
-                                    .foregroundColor(.red)
+                        NavigationLink(state: ContactDetailFeature.State(contact: contact)) {
+                            HStack {
+                                Text(contact.name)
+                                Spacer()
+                                Button {
+                                    viewStore.send(.deleteButtonTapped(id: contact.id))
+                                } label: {
+                                    Image(systemName: "trash")
+                                        .foregroundColor(.red)
+                                }
                             }
                         }
+                        .buttonStyle(.borderless)
                     }
                 }
                 .navigationTitle("Contacts")
